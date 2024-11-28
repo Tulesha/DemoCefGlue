@@ -7,6 +7,7 @@
         x:Class="DemoCefGlue.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
+        WindowState="Maximized"
         Title="DemoCefGlue">
 
     <Design.DataContext>
@@ -15,6 +16,9 @@
         <vm:MainWindowViewModel />
     </Design.DataContext>
 
-    <Decorator x:Name="browserWrapper" />
-
+    <Button Command="{Binding ClickCommand}"
+            CommandParameter="{Binding $parent[Window]}"
+            Content="Click me"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"/>
 </Window>
