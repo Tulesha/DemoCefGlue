@@ -7,7 +7,7 @@
         WindowStartupLocation="CenterOwner"
         ShowInTaskbar="False"
         Height="520" Width="640"
-        CanResize="False"
+        CanResize="True"
         Title="CefGlueWindow">
     <Decorator Name="browserWrapper" />
 </Window>

@@ -12,7 +12,7 @@ public partial class CefGlueWindow : Window
         InitializeComponent();
         
         var browser = new AvaloniaCefBrowser();
-        browser.Address = "https://www.google.com";
+        browser.Address = "https://docs.emika.tech";
         browserWrapper.Child = browser;
     }
 }

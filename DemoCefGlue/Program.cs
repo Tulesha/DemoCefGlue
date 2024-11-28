@@ -24,7 +24,7 @@ sealed class Program
             .AfterSetup(_ => CefRuntimeLoader.Initialize(new CefSettings
             {
                 RootCachePath = cachePath,
-                WindowlessRenderingEnabled = false
+                WindowlessRenderingEnabled = true
             }))
             .LogToTrace()
             .StartWithClassicDesktopLifetime(args);
